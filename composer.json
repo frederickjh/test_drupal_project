@@ -1,0 +1,23 @@
+{
+    "name": "frederickjh/test_drupal_project",
+    "description": "\"A test project to test installing external libraries in Drupal projects with composer.\"",
+    "type": "project",
+    "require": {
+        "frederickjh/test_drupal_module": "dev-master"
+    },
+    "license": "\"GPL-2.0+\"",
+    "authors": [
+        {
+            "name": "Frederick Henderson",
+            "email": "frederickjh@henderson-meier.org"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/frederickjh/test_drupal_module.git",
+            "trunk-path": "master"
+        }
+    ],
+    "minimum-stability": "dev"
+}
