@@ -3,9 +3,10 @@
     "description": "\"A test project to test installing external libraries in Drupal projects with composer.\"",
     "type": "project",
     "require": {
-        "frederickjh/test_drupal_module": "dev-master"
+        "frederickjh/test_drupal_module": "dev-master",
+        "oomphinc/composer-installers-extender": "dev-master"
     },
-    "license": "\"GPL-2.0+\"",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Frederick Henderson",
@@ -19,5 +20,40 @@
             "trunk-path": "master"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "installer-types": [
+            "drupal-module-custom",
+            "drupal-theme-custom",
+            "drupal-library"
+        ],
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-module-custom"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-theme-custom"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ]
+        },
+        "enable-patching": true,
+        "patches-file": "composer.patches.json"
+    }
 }
