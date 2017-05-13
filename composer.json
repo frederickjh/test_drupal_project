@@ -3,8 +3,7 @@
     "description": "\"A test project to test installing external libraries in Drupal projects with composer.\"",
     "type": "project",
     "require": {
-        "frederickjh/test_drupal_module": "dev-master",
-        "oomphinc/composer-installers-extender": "dev-master"
+        "frederickjh/test_drupal_module": "dev-type-drupal-library"
     },
     "license": "GPL-3.0",
     "authors": [
