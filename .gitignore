@@ -4,5 +4,6 @@
 # But not these files...
 !.gitignore
 !composer.json
+!composer.lock
 !README.md
 !LICENSE
