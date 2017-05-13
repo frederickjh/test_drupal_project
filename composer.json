@@ -3,7 +3,7 @@
     "description": "\"A test project to test installing external libraries in Drupal projects with composer.\"",
     "type": "project",
     "require": {
-        "frederickjh/test_drupal_module": "dev-master",
+        "frederickjh/test_drupal_module": "dev-composer-installers-extender",
         "oomphinc/composer-installers-extender": "dev-master"
     },
     "license": "GPL-3.0",
@@ -30,7 +30,8 @@
         "installer-types": [
             "drupal-module-custom",
             "drupal-theme-custom",
-            "drupal-library"
+            "drupal-library",
+            "library"
         ],
         "installer-paths": {
             "docroot/core": [
@@ -55,7 +56,8 @@
                 "type:drupal-theme-custom"
             ],
             "docroot/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:library"
             ]
         },
         "enable-patching": true,
