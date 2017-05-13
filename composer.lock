@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "25b7769014a13edc178243c89ef1bdd4",
+    "content-hash": "20994085a317f05875d4ce9c8de28462",
     "packages": [
         {
             "name": "composer/installers",
@@ -122,22 +122,33 @@
         },
         {
             "name": "frederickjh/test_drupal_module",
-            "version": "dev-composer-installers-extender",
+            "version": "dev-composer-installers-extender-in-drupal-module",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frederickjh/test_drupal_module.git",
-                "reference": "073e2e6ee2d936ccdd8359246fc0a1e508cfa070"
+                "reference": "82fc72794e22e544a44b6498d6c0cd39158a0a7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/frederickjh/test_drupal_module/zipball/073e2e6ee2d936ccdd8359246fc0a1e508cfa070",
-                "reference": "073e2e6ee2d936ccdd8359246fc0a1e508cfa070",
+                "url": "https://api.github.com/repos/frederickjh/test_drupal_module/zipball/82fc72794e22e544a44b6498d6c0cd39158a0a7c",
+                "reference": "82fc72794e22e544a44b6498d6c0cd39158a0a7c",
                 "shasum": ""
             },
             "require": {
-                "frederickjh/test_external_library": "dev-composer-installers-extender"
+                "frederickjh/test_external_library": "dev-composer-installers-extender-in-drupal-module",
+                "oomphinc/composer-installers-extender": "dev-master"
             },
             "type": "drupal-module-custom",
+            "extra": {
+                "installer-types": [
+                    "library"
+                ],
+                "installer-paths": {
+                    "docroot/libraries/{$name}": [
+                        "type:library"
+                    ]
+                }
+            },
             "license": [
                 "GPL-2.0+"
             ],
@@ -150,11 +161,11 @@
                 "source": "https://github.com/frederickjh/test_drupal_module.git",
                 "issues": "https://github.com/frederickjh/test_drupal_module/issues"
             },
-            "time": "2017-05-13 22:37:09"
+            "time": "2017-05-13 22:53:41"
         },
         {
             "name": "frederickjh/test_external_library",
-            "version": "dev-composer-installers-extender",
+            "version": "dev-composer-installers-extender-in-drupal-module",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frederickjh/test_external_library.git",
@@ -228,8 +239,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "frederickjh/test_drupal_module": 20,
-        "oomphinc/composer-installers-extender": 20
+        "frederickjh/test_drupal_module": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
