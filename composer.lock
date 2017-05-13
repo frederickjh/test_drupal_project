@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "20994085a317f05875d4ce9c8de28462",
+    "content-hash": "7656e5b72aa0d405cb16dca15c73fb4a",
     "packages": [
         {
             "name": "composer/installers",
@@ -122,20 +122,20 @@
         },
         {
             "name": "frederickjh/test_drupal_module",
-            "version": "dev-composer-installers-extender-in-drupal-module",
+            "version": "dev-composer-installers-extender-different-docroot-name",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frederickjh/test_drupal_module.git",
-                "reference": "82fc72794e22e544a44b6498d6c0cd39158a0a7c"
+                "reference": "9b5b151a85dbe1af8bbe40b18d0bdf7a168b871d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/frederickjh/test_drupal_module/zipball/82fc72794e22e544a44b6498d6c0cd39158a0a7c",
-                "reference": "82fc72794e22e544a44b6498d6c0cd39158a0a7c",
+                "url": "https://api.github.com/repos/frederickjh/test_drupal_module/zipball/9b5b151a85dbe1af8bbe40b18d0bdf7a168b871d",
+                "reference": "9b5b151a85dbe1af8bbe40b18d0bdf7a168b871d",
                 "shasum": ""
             },
             "require": {
-                "frederickjh/test_external_library": "dev-composer-installers-extender-in-drupal-module",
+                "frederickjh/test_external_library": "dev-composer-installers-extender-different-docroot-name",
                 "oomphinc/composer-installers-extender": "dev-master"
             },
             "type": "drupal-module-custom",
@@ -144,7 +144,7 @@
                     "library"
                 ],
                 "installer-paths": {
-                    "docroot/libraries/{$name}": [
+                    "web/libraries/{$name}": [
                         "type:library"
                     ]
                 }
@@ -161,11 +161,11 @@
                 "source": "https://github.com/frederickjh/test_drupal_module.git",
                 "issues": "https://github.com/frederickjh/test_drupal_module/issues"
             },
-            "time": "2017-05-13 22:53:41"
+            "time": "2017-05-13 23:10:55"
         },
         {
             "name": "frederickjh/test_external_library",
-            "version": "dev-composer-installers-extender-in-drupal-module",
+            "version": "dev-composer-installers-extender-different-docroot-name",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frederickjh/test_external_library.git",
